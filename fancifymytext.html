@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/fancify.css">
+
+		<!-- link to your script file here -->
+        <script src="js/loadComponent.js"></script>
+        <script src="js/fancifymytext.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="centered-content">
+			<h1 class="index-header">
+				CSC 193A - Assignment 5: Fun With Javascript
+			</h1>
+			<div id="menu-placeholder">
+			</div>
+		</div>
+		<h1>Fancify my Text</h1>
+		
+
+		<!-- Your UI controls go here -->
+		<fieldset>
+			<legend>Text</legend>
+			<textarea id="textInput" rows="4" cols="30"></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Fancify</legend>
+			<div class="controls">
+				<button type="button" id="bigger" onclick="biggerText()">Bigger!</button>
+				<label for="fancy">
+					<input type="radio" id="fancy" name="radio-button" onchange="fancyText()">
+					FancyShmancy
+				</label>
+				<label for="boring">
+					<input type="radio" id="boring" name="radio-button" onchange="fancyText()">
+					BoringBetty
+				</label>
+				<button type="button" id="moo" onclick="moo()">Moo</button>
+			</div>
+		</fieldset>
+	</body>
+</html>
