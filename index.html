@@ -2,22 +2,27 @@
 <html lang="en">
     <head>
         <title>CSC 193A</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <h1>
-            Dino Crisis
-        </h1>
-        <p>
-            <strong>Capcom</strong> has been slowly shadow-dropping their old 
-            <strong>PlayStation</strong> games onto <strong>Steam</strong> over 
-            the last few months. It started with the first and second 
-            <strong>Dino Crisis</strong> games, and then the first three 
-            <strong>Resident Evil</strong> games. I'm a big fan of Resident Evil, 
-            so I decided to try out Dino Crisis after it was put onto Steam. I 
-            can say that I am not much of a fan of Dino Crisis, unfortunately.
-        </p>
-        <a href="https://store.steampowered.com/app/4249130/Dino_Crisis/">
-            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4249130/d1469ddd7539cae7f80a82a7764e8605f895b05e/header.jpg?t=1773299578" />
-        </a>
+        <script>
+            fetch("menu.html").then(response => response.text()).then(data => { document.getElementById("menu-placeholder").innerHTML = data; });
+        </script>
+        <div class="centered-content">
+            <h1 class="index-header">
+                CSC 193A
+            </h1>
+            <div id="menu-placeholder">
+            </div>
+            <p class="index-paragraph">
+                Welcome to my CSC193A site!<br>
+                This is where I'll be hosting all of the non-discussion assignments for this class.
+            </p>
+        </div>
     </body>
 </html>

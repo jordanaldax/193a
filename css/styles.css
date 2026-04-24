@@ -1,0 +1,12 @@
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+body {
+    font-family: 'comic-neue-bold', cursive;
+}
+*/
